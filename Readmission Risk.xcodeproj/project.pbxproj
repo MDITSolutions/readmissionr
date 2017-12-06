@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		97538FEE1FD86995002AEF78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97538FED1FD86995002AEF78 /* AppDelegate.swift */; };
+		97538FF01FD86995002AEF78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97538FEF1FD86995002AEF78 /* ViewController.swift */; };
+		97538FF31FD86995002AEF78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97538FF11FD86995002AEF78 /* Main.storyboard */; };
+		97538FF61FD86995002AEF78 /* Readmission_Risk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97538FF41FD86995002AEF78 /* Readmission_Risk.xcdatamodeld */; };
+		97538FF81FD86995002AEF78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97538FF71FD86995002AEF78 /* Assets.xcassets */; };
+		97538FFB1FD86995002AEF78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97538FF91FD86995002AEF78 /* LaunchScreen.storyboard */; };
+		975390061FD86996002AEF78 /* Readmission_RiskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975390051FD86996002AEF78 /* Readmission_RiskTests.swift */; };
+		975390111FD86996002AEF78 /* Readmission_RiskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975390101FD86996002AEF78 /* Readmission_RiskUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		975390021FD86996002AEF78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97538FE21FD86995002AEF78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97538FE91FD86995002AEF78;
+			remoteInfo = "Readmission Risk";
+		};
+		9753900D1FD86996002AEF78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97538FE21FD86995002AEF78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97538FE91FD86995002AEF78;
+			remoteInfo = "Readmission Risk";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		97538FEA1FD86995002AEF78 /* Readmission Risk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Readmission Risk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97538FED1FD86995002AEF78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		97538FEF1FD86995002AEF78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		97538FF21FD86995002AEF78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97538FF51FD86995002AEF78 /* Readmission_Risk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Readmission_Risk.xcdatamodel; sourceTree = "<group>"; };
+		97538FF71FD86995002AEF78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		97538FFA1FD86995002AEF78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		97538FFC1FD86995002AEF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		975390011FD86996002AEF78 /* Readmission RiskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Readmission RiskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		975390051FD86996002AEF78 /* Readmission_RiskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Readmission_RiskTests.swift; sourceTree = "<group>"; };
+		975390071FD86996002AEF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9753900C1FD86996002AEF78 /* Readmission RiskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Readmission RiskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		975390101FD86996002AEF78 /* Readmission_RiskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Readmission_RiskUITests.swift; sourceTree = "<group>"; };
+		975390121FD86996002AEF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97538FE71FD86995002AEF78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97538FFE1FD86996002AEF78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		975390091FD86996002AEF78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		97538FE11FD86995002AEF78 = {
+			isa = PBXGroup;
+			children = (
+				97538FEC1FD86995002AEF78 /* Readmission Risk */,
+				975390041FD86996002AEF78 /* Readmission RiskTests */,
+				9753900F1FD86996002AEF78 /* Readmission RiskUITests */,
+				97538FEB1FD86995002AEF78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97538FEB1FD86995002AEF78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97538FEA1FD86995002AEF78 /* Readmission Risk.app */,
+				975390011FD86996002AEF78 /* Readmission RiskTests.xctest */,
+				9753900C1FD86996002AEF78 /* Readmission RiskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97538FEC1FD86995002AEF78 /* Readmission Risk */ = {
+			isa = PBXGroup;
+			children = (
+				97538FED1FD86995002AEF78 /* AppDelegate.swift */,
+				97538FEF1FD86995002AEF78 /* ViewController.swift */,
+				97538FF11FD86995002AEF78 /* Main.storyboard */,
+				97538FF71FD86995002AEF78 /* Assets.xcassets */,
+				97538FF91FD86995002AEF78 /* LaunchScreen.storyboard */,
+				97538FFC1FD86995002AEF78 /* Info.plist */,
+				97538FF41FD86995002AEF78 /* Readmission_Risk.xcdatamodeld */,
+			);
+			path = "Readmission Risk";
+			sourceTree = "<group>";
+		};
+		975390041FD86996002AEF78 /* Readmission RiskTests */ = {
+			isa = PBXGroup;
+			children = (
+				975390051FD86996002AEF78 /* Readmission_RiskTests.swift */,
+				975390071FD86996002AEF78 /* Info.plist */,
+			);
+			path = "Readmission RiskTests";
+			sourceTree = "<group>";
+		};
+		9753900F1FD86996002AEF78 /* Readmission RiskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				975390101FD86996002AEF78 /* Readmission_RiskUITests.swift */,
+				975390121FD86996002AEF78 /* Info.plist */,
+			);
+			path = "Readmission RiskUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97538FE91FD86995002AEF78 /* Readmission Risk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 975390151FD86996002AEF78 /* Build configuration list for PBXNativeTarget "Readmission Risk" */;
+			buildPhases = (
+				97538FE61FD86995002AEF78 /* Sources */,
+				97538FE71FD86995002AEF78 /* Frameworks */,
+				97538FE81FD86995002AEF78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Readmission Risk";
+			productName = "Readmission Risk";
+			productReference = 97538FEA1FD86995002AEF78 /* Readmission Risk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		975390001FD86996002AEF78 /* Readmission RiskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 975390181FD86996002AEF78 /* Build configuration list for PBXNativeTarget "Readmission RiskTests" */;
+			buildPhases = (
+				97538FFD1FD86996002AEF78 /* Sources */,
+				97538FFE1FD86996002AEF78 /* Frameworks */,
+				97538FFF1FD86996002AEF78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				975390031FD86996002AEF78 /* PBXTargetDependency */,
+			);
+			name = "Readmission RiskTests";
+			productName = "Readmission RiskTests";
+			productReference = 975390011FD86996002AEF78 /* Readmission RiskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9753900B1FD86996002AEF78 /* Readmission RiskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9753901B1FD86996002AEF78 /* Build configuration list for PBXNativeTarget "Readmission RiskUITests" */;
+			buildPhases = (
+				975390081FD86996002AEF78 /* Sources */,
+				975390091FD86996002AEF78 /* Frameworks */,
+				9753900A1FD86996002AEF78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9753900E1FD86996002AEF78 /* PBXTargetDependency */,
+			);
+			name = "Readmission RiskUITests";
+			productName = "Readmission RiskUITests";
+			productReference = 9753900C1FD86996002AEF78 /* Readmission RiskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97538FE21FD86995002AEF78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Somdev Choudhary";
+				TargetAttributes = {
+					97538FE91FD86995002AEF78 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					975390001FD86996002AEF78 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 97538FE91FD86995002AEF78;
+					};
+					9753900B1FD86996002AEF78 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 97538FE91FD86995002AEF78;
+					};
+				};
+			};
+			buildConfigurationList = 97538FE51FD86995002AEF78 /* Build configuration list for PBXProject "Readmission Risk" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97538FE11FD86995002AEF78;
+			productRefGroup = 97538FEB1FD86995002AEF78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97538FE91FD86995002AEF78 /* Readmission Risk */,
+				975390001FD86996002AEF78 /* Readmission RiskTests */,
+				9753900B1FD86996002AEF78 /* Readmission RiskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97538FE81FD86995002AEF78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97538FFB1FD86995002AEF78 /* LaunchScreen.storyboard in Resources */,
+				97538FF81FD86995002AEF78 /* Assets.xcassets in Resources */,
+				97538FF31FD86995002AEF78 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97538FFF1FD86996002AEF78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9753900A1FD86996002AEF78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97538FE61FD86995002AEF78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97538FF01FD86995002AEF78 /* ViewController.swift in Sources */,
+				97538FEE1FD86995002AEF78 /* AppDelegate.swift in Sources */,
+				97538FF61FD86995002AEF78 /* Readmission_Risk.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97538FFD1FD86996002AEF78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				975390061FD86996002AEF78 /* Readmission_RiskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		975390081FD86996002AEF78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				975390111FD86996002AEF78 /* Readmission_RiskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		975390031FD86996002AEF78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97538FE91FD86995002AEF78 /* Readmission Risk */;
+			targetProxy = 975390021FD86996002AEF78 /* PBXContainerItemProxy */;
+		};
+		9753900E1FD86996002AEF78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97538FE91FD86995002AEF78 /* Readmission Risk */;
+			targetProxy = 9753900D1FD86996002AEF78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97538FF11FD86995002AEF78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97538FF21FD86995002AEF78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97538FF91FD86995002AEF78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97538FFA1FD86995002AEF78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		975390131FD86996002AEF78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		975390141FD86996002AEF78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		975390161FD86996002AEF78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Readmission Risk/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.somdev.Readmission-Risk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		975390171FD86996002AEF78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Readmission Risk/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.somdev.Readmission-Risk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		975390191FD86996002AEF78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Readmission RiskTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.somdev.Readmission-RiskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Readmission Risk.app/Readmission Risk";
+			};
+			name = Debug;
+		};
+		9753901A1FD86996002AEF78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Readmission RiskTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.somdev.Readmission-RiskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Readmission Risk.app/Readmission Risk";
+			};
+			name = Release;
+		};
+		9753901C1FD86996002AEF78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Readmission RiskUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.somdev.Readmission-RiskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Readmission Risk";
+			};
+			name = Debug;
+		};
+		9753901D1FD86996002AEF78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Readmission RiskUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.somdev.Readmission-RiskUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Readmission Risk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97538FE51FD86995002AEF78 /* Build configuration list for PBXProject "Readmission Risk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				975390131FD86996002AEF78 /* Debug */,
+				975390141FD86996002AEF78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		975390151FD86996002AEF78 /* Build configuration list for PBXNativeTarget "Readmission Risk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				975390161FD86996002AEF78 /* Debug */,
+				975390171FD86996002AEF78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		975390181FD86996002AEF78 /* Build configuration list for PBXNativeTarget "Readmission RiskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				975390191FD86996002AEF78 /* Debug */,
+				9753901A1FD86996002AEF78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9753901B1FD86996002AEF78 /* Build configuration list for PBXNativeTarget "Readmission RiskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9753901C1FD86996002AEF78 /* Debug */,
+				9753901D1FD86996002AEF78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		97538FF41FD86995002AEF78 /* Readmission_Risk.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				97538FF51FD86995002AEF78 /* Readmission_Risk.xcdatamodel */,
+			);
+			currentVersion = 97538FF51FD86995002AEF78 /* Readmission_Risk.xcdatamodel */;
+			path = Readmission_Risk.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 97538FE21FD86995002AEF78 /* Project object */;
+}
