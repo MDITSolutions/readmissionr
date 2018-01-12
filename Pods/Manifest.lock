@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (4.5.1)
+  - JJMaterialTextField (0.1.3)
+  - KSToastView (0.5.7)
+  - KVNProgress (2.3.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - JJMaterialTextField
+  - KSToastView (= 0.5.7)
+  - KVNProgress
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  JJMaterialTextField: 1ae240b5d75966dd0c2acc9f59d1be6f4e83e0e5
+  KSToastView: aeb0ca50b44e9568b6f95b2d1ec53a3f016b50fc
+  KVNProgress: 8167b1f19e2758290c0b6143020ed9dcbb0477a1
+
+PODFILE CHECKSUM: f62e330a406ee2af4dc06def4569bf0c78094787
+
+COCOAPODS: 1.3.1

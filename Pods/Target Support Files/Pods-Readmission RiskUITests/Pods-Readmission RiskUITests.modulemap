@@ -1,0 +1,6 @@
+framework module Pods_Readmission_RiskUITests {
+  umbrella header "Pods-Readmission RiskUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

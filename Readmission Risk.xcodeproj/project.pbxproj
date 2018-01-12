@@ -7,14 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3315FC3F6DA76F96F1635A17 /* Pods_Readmission_RiskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADEDDEE80DC7E535EFD9840A /* Pods_Readmission_RiskUITests.framework */; };
+		7D1A3DF9A201F7D0D8DAA186 /* Pods_Readmission_RiskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3B091B8C9DEBC4424B63CF /* Pods_Readmission_RiskTests.framework */; };
+		970236981FEED5D10008C157 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970236971FEED5D10008C157 /* DatePickerDialog.swift */; };
+		97053D351FE056C900D880DD /* AddPatientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97053D341FE056C900D880DD /* AddPatientVC.swift */; };
+		97053D371FE056D700D880DD /* MyPatientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97053D361FE056D700D880DD /* MyPatientVC.swift */; };
+		97053D3D1FE05CC800D880DD /* AddPatientSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97053D391FE05CC800D880DD /* AddPatientSliderCell.swift */; };
+		97053D3E1FE05CC800D880DD /* AddPatientConditionCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97053D3A1FE05CC800D880DD /* AddPatientConditionCC.swift */; };
+		97053D3F1FE05CC800D880DD /* AddPatientProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97053D3B1FE05CC800D880DD /* AddPatientProfileCell.swift */; };
+		97053D401FE05CC800D880DD /* AddPatientConditionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97053D3C1FE05CC800D880DD /* AddPatientConditionCell.swift */; };
+		972148391FE447A600D8A51A /* MyPatientNameCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972148381FE447A600D8A51A /* MyPatientNameCC.swift */; };
+		973757C820089CB90081F052 /* .gitignore.txt in Resources */ = {isa = PBXBuildFile; fileRef = 973757C720089CB90081F052 /* .gitignore.txt */; };
 		97538FEE1FD86995002AEF78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97538FED1FD86995002AEF78 /* AppDelegate.swift */; };
-		97538FF01FD86995002AEF78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97538FEF1FD86995002AEF78 /* ViewController.swift */; };
 		97538FF31FD86995002AEF78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97538FF11FD86995002AEF78 /* Main.storyboard */; };
 		97538FF61FD86995002AEF78 /* Readmission_Risk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97538FF41FD86995002AEF78 /* Readmission_Risk.xcdatamodeld */; };
 		97538FF81FD86995002AEF78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97538FF71FD86995002AEF78 /* Assets.xcassets */; };
 		97538FFB1FD86995002AEF78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97538FF91FD86995002AEF78 /* LaunchScreen.storyboard */; };
 		975390061FD86996002AEF78 /* Readmission_RiskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975390051FD86996002AEF78 /* Readmission_RiskTests.swift */; };
 		975390111FD86996002AEF78 /* Readmission_RiskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975390101FD86996002AEF78 /* Readmission_RiskUITests.swift */; };
+		977458EC1FE642870079BBBB /* DSBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 977458EB1FE642870079BBBB /* DSBarChart.m */; };
+		97B4974B1FDB0D1B007A4CFA /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B497451FDB0D1B007A4CFA /* UIScrollView+TPKeyboardAvoidingAdditions.m */; };
+		97B4974C1FDB0D1B007A4CFA /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B497461FDB0D1B007A4CFA /* TPKeyboardAvoidingTableView.m */; };
+		97B4974D1FDB0D1B007A4CFA /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B497471FDB0D1B007A4CFA /* TPKeyboardAvoidingScrollView.m */; };
+		97B4974E1FDB0D1B007A4CFA /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B497491FDB0D1B007A4CFA /* TPKeyboardAvoidingCollectionView.m */; };
+		97B497521FDB0FC6007A4CFA /* RRMaterialTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B497511FDB0FC6007A4CFA /* RRMaterialTextfield.swift */; };
+		97CE90231FD9CE850078F493 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CE90221FD9CE850078F493 /* DashboardVC.swift */; };
+		97E48A2E1FE57C0500C56127 /* MyPatientGraphTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E48A2D1FE57C0500C56127 /* MyPatientGraphTableCell.swift */; };
+		97E48A301FE57C2000C56127 /* MyPatientRiskTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E48A2F1FE57C2000C56127 /* MyPatientRiskTableCell.swift */; };
+		97EF7D731FDC5576006149FE /* RRLevelSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF7D721FDC5576006149FE /* RRLevelSlider.swift */; };
+		97EF7D761FDC5EA3006149FE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EF7D751FDC5EA3006149FE /* Extension.swift */; };
+		97FFA2B61FE66FF000BDB172 /* MPRiskIndexTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FFA2B51FE66FF000BDB172 /* MPRiskIndexTableCell.swift */; };
+		97FFA2B81FE6700000BDB172 /* MPRiskFactsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FFA2B71FE6700000BDB172 /* MPRiskFactsTableCell.swift */; };
+		97FFA2BA1FE679BF00BDB172 /* MPRiskFactsCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FFA2B91FE679BF00BDB172 /* MPRiskFactsCC.swift */; };
+		DA49F4BD74C3921A41DDC220 /* Pods_Readmission_Risk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A48EDAA8BFD32A439BAC4658 /* Pods_Readmission_Risk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +60,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05CE527B213E4E4868973D26 /* Pods-Readmission RiskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Readmission RiskTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Readmission RiskTests/Pods-Readmission RiskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1840C499ADEC8A740B7C12A0 /* Pods-Readmission Risk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Readmission Risk.release.xcconfig"; path = "Pods/Target Support Files/Pods-Readmission Risk/Pods-Readmission Risk.release.xcconfig"; sourceTree = "<group>"; };
+		1DA3DA6055F6B7F310437F8F /* Pods-Readmission Risk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Readmission Risk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Readmission Risk/Pods-Readmission Risk.debug.xcconfig"; sourceTree = "<group>"; };
+		4D5E06C3B2646DB43979088B /* Pods-Readmission RiskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Readmission RiskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Readmission RiskTests/Pods-Readmission RiskTests.release.xcconfig"; sourceTree = "<group>"; };
+		6E3B091B8C9DEBC4424B63CF /* Pods_Readmission_RiskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Readmission_RiskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		970236971FEED5D10008C157 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
+		97053D341FE056C900D880DD /* AddPatientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPatientVC.swift; sourceTree = "<group>"; };
+		97053D361FE056D700D880DD /* MyPatientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPatientVC.swift; sourceTree = "<group>"; };
+		97053D391FE05CC800D880DD /* AddPatientSliderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPatientSliderCell.swift; sourceTree = "<group>"; };
+		97053D3A1FE05CC800D880DD /* AddPatientConditionCC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPatientConditionCC.swift; sourceTree = "<group>"; };
+		97053D3B1FE05CC800D880DD /* AddPatientProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPatientProfileCell.swift; sourceTree = "<group>"; };
+		97053D3C1FE05CC800D880DD /* AddPatientConditionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPatientConditionCell.swift; sourceTree = "<group>"; };
+		972148381FE447A600D8A51A /* MyPatientNameCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPatientNameCC.swift; sourceTree = "<group>"; };
+		973757C720089CB90081F052 /* .gitignore.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore.txt; sourceTree = "<group>"; };
 		97538FEA1FD86995002AEF78 /* Readmission Risk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Readmission Risk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97538FED1FD86995002AEF78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		97538FEF1FD86995002AEF78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		97538FF21FD86995002AEF78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97538FF51FD86995002AEF78 /* Readmission_Risk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Readmission_Risk.xcdatamodel; sourceTree = "<group>"; };
 		97538FF71FD86995002AEF78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +87,30 @@
 		9753900C1FD86996002AEF78 /* Readmission RiskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Readmission RiskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		975390101FD86996002AEF78 /* Readmission_RiskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Readmission_RiskUITests.swift; sourceTree = "<group>"; };
 		975390121FD86996002AEF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		977458EA1FE642860079BBBB /* DSBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSBarChart.h; sourceTree = "<group>"; };
+		977458EB1FE642870079BBBB /* DSBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSBarChart.m; sourceTree = "<group>"; };
+		97B497431FDB0D1B007A4CFA /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		97B497441FDB0D1B007A4CFA /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		97B497451FDB0D1B007A4CFA /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		97B497461FDB0D1B007A4CFA /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+		97B497471FDB0D1B007A4CFA /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		97B497481FDB0D1B007A4CFA /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		97B497491FDB0D1B007A4CFA /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		97B4974A1FDB0D1B007A4CFA /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		97B4974F1FDB0D7F007A4CFA /* Readmission Risk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Readmission Risk-Bridging-Header.h"; sourceTree = "<group>"; };
+		97B497511FDB0FC6007A4CFA /* RRMaterialTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRMaterialTextfield.swift; sourceTree = "<group>"; };
+		97CE90221FD9CE850078F493 /* DashboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		97E48A2D1FE57C0500C56127 /* MyPatientGraphTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPatientGraphTableCell.swift; sourceTree = "<group>"; };
+		97E48A2F1FE57C2000C56127 /* MyPatientRiskTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPatientRiskTableCell.swift; sourceTree = "<group>"; };
+		97EF7D721FDC5576006149FE /* RRLevelSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRLevelSlider.swift; sourceTree = "<group>"; };
+		97EF7D751FDC5EA3006149FE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		97FFA2B51FE66FF000BDB172 /* MPRiskIndexTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPRiskIndexTableCell.swift; sourceTree = "<group>"; };
+		97FFA2B71FE6700000BDB172 /* MPRiskFactsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPRiskFactsTableCell.swift; sourceTree = "<group>"; };
+		97FFA2B91FE679BF00BDB172 /* MPRiskFactsCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPRiskFactsCC.swift; sourceTree = "<group>"; };
+		A48EDAA8BFD32A439BAC4658 /* Pods_Readmission_Risk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Readmission_Risk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADEDDEE80DC7E535EFD9840A /* Pods_Readmission_RiskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Readmission_RiskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7A1C720FD5213C60AC2DC4F /* Pods-Readmission RiskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Readmission RiskUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Readmission RiskUITests/Pods-Readmission RiskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ED0435AD03FB0BD518F7B660 /* Pods-Readmission RiskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Readmission RiskUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Readmission RiskUITests/Pods-Readmission RiskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA49F4BD74C3921A41DDC220 /* Pods_Readmission_Risk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D1A3DF9A201F7D0D8DAA186 /* Pods_Readmission_RiskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +134,96 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3315FC3F6DA76F96F1635A17 /* Pods_Readmission_RiskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04796A22E115509AD68FEADD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1DA3DA6055F6B7F310437F8F /* Pods-Readmission Risk.debug.xcconfig */,
+				1840C499ADEC8A740B7C12A0 /* Pods-Readmission Risk.release.xcconfig */,
+				05CE527B213E4E4868973D26 /* Pods-Readmission RiskTests.debug.xcconfig */,
+				4D5E06C3B2646DB43979088B /* Pods-Readmission RiskTests.release.xcconfig */,
+				ED0435AD03FB0BD518F7B660 /* Pods-Readmission RiskUITests.debug.xcconfig */,
+				D7A1C720FD5213C60AC2DC4F /* Pods-Readmission RiskUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		194EA4A0CD6D5B6517981AFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A48EDAA8BFD32A439BAC4658 /* Pods_Readmission_Risk.framework */,
+				6E3B091B8C9DEBC4424B63CF /* Pods_Readmission_RiskTests.framework */,
+				ADEDDEE80DC7E535EFD9840A /* Pods_Readmission_RiskUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		970236961FEED5D10008C157 /* DatePickerDialog */ = {
+			isa = PBXGroup;
+			children = (
+				970236971FEED5D10008C157 /* DatePickerDialog.swift */,
+			);
+			path = DatePickerDialog;
+			sourceTree = "<group>";
+		};
+		97053D321FE0569A00D880DD /* MyPatientVC */ = {
+			isa = PBXGroup;
+			children = (
+				97053D361FE056D700D880DD /* MyPatientVC.swift */,
+				972148371FE4478700D8A51A /* MyPatientCell */,
+			);
+			path = MyPatientVC;
+			sourceTree = "<group>";
+		};
+		97053D331FE0569A00D880DD /* AddPatientVC */ = {
+			isa = PBXGroup;
+			children = (
+				97053D341FE056C900D880DD /* AddPatientVC.swift */,
+				97053D381FE05CC800D880DD /* AddPatientTableCell */,
+			);
+			path = AddPatientVC;
+			sourceTree = "<group>";
+		};
+		97053D381FE05CC800D880DD /* AddPatientTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				97053D391FE05CC800D880DD /* AddPatientSliderCell.swift */,
+				97053D3A1FE05CC800D880DD /* AddPatientConditionCC.swift */,
+				97053D3B1FE05CC800D880DD /* AddPatientProfileCell.swift */,
+				97053D3C1FE05CC800D880DD /* AddPatientConditionCell.swift */,
+			);
+			path = AddPatientTableCell;
+			sourceTree = "<group>";
+		};
+		972148371FE4478700D8A51A /* MyPatientCell */ = {
+			isa = PBXGroup;
+			children = (
+				972148381FE447A600D8A51A /* MyPatientNameCC.swift */,
+				97E48A2D1FE57C0500C56127 /* MyPatientGraphTableCell.swift */,
+				97E48A2F1FE57C2000C56127 /* MyPatientRiskTableCell.swift */,
+				97FFA2B51FE66FF000BDB172 /* MPRiskIndexTableCell.swift */,
+				97FFA2B71FE6700000BDB172 /* MPRiskFactsTableCell.swift */,
+				97FFA2B91FE679BF00BDB172 /* MPRiskFactsCC.swift */,
+			);
+			path = MyPatientCell;
+			sourceTree = "<group>";
+		};
 		97538FE11FD86995002AEF78 = {
 			isa = PBXGroup;
 			children = (
+				973757C720089CB90081F052 /* .gitignore.txt */,
 				97538FEC1FD86995002AEF78 /* Readmission Risk */,
 				975390041FD86996002AEF78 /* Readmission RiskTests */,
 				9753900F1FD86996002AEF78 /* Readmission RiskUITests */,
 				97538FEB1FD86995002AEF78 /* Products */,
+				04796A22E115509AD68FEADD /* Pods */,
+				194EA4A0CD6D5B6517981AFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +240,13 @@
 		97538FEC1FD86995002AEF78 /* Readmission Risk */ = {
 			isa = PBXGroup;
 			children = (
-				97538FED1FD86995002AEF78 /* AppDelegate.swift */,
-				97538FEF1FD86995002AEF78 /* ViewController.swift */,
 				97538FF11FD86995002AEF78 /* Main.storyboard */,
+				97538FED1FD86995002AEF78 /* AppDelegate.swift */,
+				97EF7D741FDC5E92006149FE /* Extension */,
+				97CE90201FD9CE850078F493 /* Presentation Controller */,
+				97B497501FDB0F9A007A4CFA /* Modals */,
+				97B497411FDB0D1B007A4CFA /* External Libraries */,
+				97B4974F1FDB0D7F007A4CFA /* Readmission Risk-Bridging-Header.h */,
 				97538FF71FD86995002AEF78 /* Assets.xcassets */,
 				97538FF91FD86995002AEF78 /* LaunchScreen.storyboard */,
 				97538FFC1FD86995002AEF78 /* Info.plist */,
@@ -128,6 +273,75 @@
 			path = "Readmission RiskUITests";
 			sourceTree = "<group>";
 		};
+		977458E91FE6427E0079BBBB /* Bar Chart */ = {
+			isa = PBXGroup;
+			children = (
+				977458EA1FE642860079BBBB /* DSBarChart.h */,
+				977458EB1FE642870079BBBB /* DSBarChart.m */,
+			);
+			path = "Bar Chart";
+			sourceTree = "<group>";
+		};
+		97B497411FDB0D1B007A4CFA /* External Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				970236961FEED5D10008C157 /* DatePickerDialog */,
+				977458E91FE6427E0079BBBB /* Bar Chart */,
+				97B497421FDB0D1B007A4CFA /* TPKeyboardAvoiding */,
+			);
+			path = "External Libraries";
+			sourceTree = "<group>";
+		};
+		97B497421FDB0D1B007A4CFA /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				97B497431FDB0D1B007A4CFA /* TPKeyboardAvoidingScrollView.h */,
+				97B497441FDB0D1B007A4CFA /* TPKeyboardAvoidingCollectionView.h */,
+				97B497451FDB0D1B007A4CFA /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				97B497461FDB0D1B007A4CFA /* TPKeyboardAvoidingTableView.m */,
+				97B497471FDB0D1B007A4CFA /* TPKeyboardAvoidingScrollView.m */,
+				97B497481FDB0D1B007A4CFA /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				97B497491FDB0D1B007A4CFA /* TPKeyboardAvoidingCollectionView.m */,
+				97B4974A1FDB0D1B007A4CFA /* TPKeyboardAvoidingTableView.h */,
+			);
+			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		97B497501FDB0F9A007A4CFA /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				97B497511FDB0FC6007A4CFA /* RRMaterialTextfield.swift */,
+				97EF7D721FDC5576006149FE /* RRLevelSlider.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		97CE90201FD9CE850078F493 /* Presentation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				97CE90211FD9CE850078F493 /* DashboardVC */,
+				97053D331FE0569A00D880DD /* AddPatientVC */,
+				97053D321FE0569A00D880DD /* MyPatientVC */,
+			);
+			path = "Presentation Controller";
+			sourceTree = "<group>";
+		};
+		97CE90211FD9CE850078F493 /* DashboardVC */ = {
+			isa = PBXGroup;
+			children = (
+				97CE90221FD9CE850078F493 /* DashboardVC.swift */,
+			);
+			path = DashboardVC;
+			sourceTree = "<group>";
+		};
+		97EF7D741FDC5E92006149FE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				97EF7D751FDC5EA3006149FE /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +349,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 975390151FD86996002AEF78 /* Build configuration list for PBXNativeTarget "Readmission Risk" */;
 			buildPhases = (
+				BD1789C63793F16BA1ECB666 /* [CP] Check Pods Manifest.lock */,
 				97538FE61FD86995002AEF78 /* Sources */,
 				97538FE71FD86995002AEF78 /* Frameworks */,
 				97538FE81FD86995002AEF78 /* Resources */,
+				A3B42572FADF03F619CD950C /* [CP] Embed Pods Frameworks */,
+				856F7762174A1FFC1E1E3AC0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +369,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 975390181FD86996002AEF78 /* Build configuration list for PBXNativeTarget "Readmission RiskTests" */;
 			buildPhases = (
+				0F3126C53B75F2CBD5DC37ED /* [CP] Check Pods Manifest.lock */,
 				97538FFD1FD86996002AEF78 /* Sources */,
 				97538FFE1FD86996002AEF78 /* Frameworks */,
 				97538FFF1FD86996002AEF78 /* Resources */,
+				C79C929D6A941125A92BB95B /* [CP] Embed Pods Frameworks */,
+				8E07C061EA3E03359333C53E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +390,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9753901B1FD86996002AEF78 /* Build configuration list for PBXNativeTarget "Readmission RiskUITests" */;
 			buildPhases = (
+				1377917B308BC75661062177 /* [CP] Check Pods Manifest.lock */,
 				975390081FD86996002AEF78 /* Sources */,
 				975390091FD86996002AEF78 /* Frameworks */,
 				9753900A1FD86996002AEF78 /* Resources */,
+				E314AB2D4874D3D5541BB5C4 /* [CP] Embed Pods Frameworks */,
+				06CCB95994B23D023465ED86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,7 +419,7 @@
 				TargetAttributes = {
 					97538FE91FD86995002AEF78 = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					975390001FD86996002AEF78 = {
 						CreatedOnToolsVersion = 9.1;
@@ -237,6 +460,7 @@
 			files = (
 				97538FFB1FD86995002AEF78 /* LaunchScreen.storyboard in Resources */,
 				97538FF81FD86995002AEF78 /* Assets.xcassets in Resources */,
+				973757C820089CB90081F052 /* .gitignore.txt in Resources */,
 				97538FF31FD86995002AEF78 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,14 +481,191 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06CCB95994B23D023465ED86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Readmission RiskUITests/Pods-Readmission RiskUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F3126C53B75F2CBD5DC37ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Readmission RiskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1377917B308BC75661062177 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Readmission RiskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		856F7762174A1FFC1E1E3AC0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Readmission Risk/Pods-Readmission Risk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E07C061EA3E03359333C53E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Readmission RiskTests/Pods-Readmission RiskTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3B42572FADF03F619CD950C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Readmission Risk/Pods-Readmission Risk-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/JJMaterialTextField/JJMaterialTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/KSToastView/KSToastView.framework",
+				"${BUILT_PRODUCTS_DIR}/KVNProgress/KVNProgress.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JJMaterialTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KSToastView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVNProgress.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Readmission Risk/Pods-Readmission Risk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD1789C63793F16BA1ECB666 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Readmission Risk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C79C929D6A941125A92BB95B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Readmission RiskTests/Pods-Readmission RiskTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E314AB2D4874D3D5541BB5C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Readmission RiskUITests/Pods-Readmission RiskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		97538FE61FD86995002AEF78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97538FF01FD86995002AEF78 /* ViewController.swift in Sources */,
+				97053D371FE056D700D880DD /* MyPatientVC.swift in Sources */,
+				97B497521FDB0FC6007A4CFA /* RRMaterialTextfield.swift in Sources */,
+				97CE90231FD9CE850078F493 /* DashboardVC.swift in Sources */,
+				97E48A2E1FE57C0500C56127 /* MyPatientGraphTableCell.swift in Sources */,
+				97053D3F1FE05CC800D880DD /* AddPatientProfileCell.swift in Sources */,
+				970236981FEED5D10008C157 /* DatePickerDialog.swift in Sources */,
+				972148391FE447A600D8A51A /* MyPatientNameCC.swift in Sources */,
+				97EF7D731FDC5576006149FE /* RRLevelSlider.swift in Sources */,
+				97EF7D761FDC5EA3006149FE /* Extension.swift in Sources */,
+				97B4974C1FDB0D1B007A4CFA /* TPKeyboardAvoidingTableView.m in Sources */,
+				977458EC1FE642870079BBBB /* DSBarChart.m in Sources */,
+				97B4974B1FDB0D1B007A4CFA /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				97E48A301FE57C2000C56127 /* MyPatientRiskTableCell.swift in Sources */,
+				97FFA2BA1FE679BF00BDB172 /* MPRiskFactsCC.swift in Sources */,
+				97B4974D1FDB0D1B007A4CFA /* TPKeyboardAvoidingScrollView.m in Sources */,
+				97FFA2B61FE66FF000BDB172 /* MPRiskIndexTableCell.swift in Sources */,
 				97538FEE1FD86995002AEF78 /* AppDelegate.swift in Sources */,
+				97053D3D1FE05CC800D880DD /* AddPatientSliderCell.swift in Sources */,
+				97053D3E1FE05CC800D880DD /* AddPatientConditionCC.swift in Sources */,
+				97053D351FE056C900D880DD /* AddPatientVC.swift in Sources */,
 				97538FF61FD86995002AEF78 /* Readmission_Risk.xcdatamodeld in Sources */,
+				97053D401FE05CC800D880DD /* AddPatientConditionCell.swift in Sources */,
+				97FFA2B81FE6700000BDB172 /* MPRiskFactsTableCell.swift in Sources */,
+				97B4974E1FDB0D1B007A4CFA /* TPKeyboardAvoidingCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,34 +829,49 @@
 		};
 		975390161FD86996002AEF78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DA3DA6055F6B7F310437F8F /* Pods-Readmission Risk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Casey Conger (6934KY5XQJ)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7C3LS64FEY;
 				INFOPLIST_FILE = "Readmission Risk/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.somdev.Readmission-Risk";
+				PRODUCT_BUNDLE_IDENTIFIER = com.readmissionrisk.readmissionrisk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f3996982-8837-4966-9df3-6146e68bd07a";
+				PROVISIONING_PROFILE_SPECIFIER = ReadmissionDevPro_7Dec;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Readmission Risk/Readmission Risk-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		975390171FD86996002AEF78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1840C499ADEC8A740B7C12A0 /* Pods-Readmission Risk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Casey Conger (6934KY5XQJ)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 7C3LS64FEY;
 				INFOPLIST_FILE = "Readmission Risk/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.somdev.Readmission-Risk";
+				PRODUCT_BUNDLE_IDENTIFIER = com.readmissionrisk.readmissionrisk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f3996982-8837-4966-9df3-6146e68bd07a";
+				PROVISIONING_PROFILE_SPECIFIER = ReadmissionDevPro_7Dec;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Readmission Risk/Readmission Risk-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
 		975390191FD86996002AEF78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05CE527B213E4E4868973D26 /* Pods-Readmission RiskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -472,6 +888,7 @@
 		};
 		9753901A1FD86996002AEF78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D5E06C3B2646DB43979088B /* Pods-Readmission RiskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +905,7 @@
 		};
 		9753901C1FD86996002AEF78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED0435AD03FB0BD518F7B660 /* Pods-Readmission RiskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -503,6 +921,7 @@
 		};
 		9753901D1FD86996002AEF78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7A1C720FD5213C60AC2DC4F /* Pods-Readmission RiskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
