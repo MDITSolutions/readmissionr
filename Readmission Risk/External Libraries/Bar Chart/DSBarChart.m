@@ -35,11 +35,30 @@
     }
 }
 
+-(UIColor *)colorFromHexString{
+    unsigned rgbValue = 0;
+    NSScanner *scanner = [NSScanner scannerWithString:self.hexStr_];
+    [scanner setScanLocation:1]; // bypass '#' character
+    [scanner scanHexInt:&rgbValue];
+    return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
+}
+
 - (void)drawRect:(CGRect)rect
 {
     /// Drawing code
     [self calculate];
-    float rectWidth = (float)(rect.size.width-(self.numberOfBars)) / (float)self.numberOfBars;
+    float rectWidth;
+    
+    if (self.numberOfBars > 4)
+    {
+       rectWidth = (float)(rect.size.width-(self.numberOfBars)) / (float)self.numberOfBars;
+    }
+    else
+    {
+         rectWidth = 25;
+    }
+    //float rectWidth = (float)(rect.size.width-(self.numberOfBars)) / (float)self.numberOfBars; //somdev
+    
     CGContextRef context = UIGraphicsGetCurrentContext();
     float LBL_HEIGHT = 20.0f, iLen, x, heightRatio, height, y;
     UIColor *iColor ;
@@ -49,6 +68,7 @@
         
         /// Calculate dimensions
         iLen = [[vals objectAtIndex:barCount] floatValue];
+                
         x = barCount * (rectWidth);
         heightRatio = iLen / self.maxLen;
         height = heightRatio * rect.size.height;
@@ -66,8 +86,27 @@
         lblRef.backgroundColor = [UIColor clearColor];
         [self addSubview:lblRef];*/
         
+        
+        if (self.selectedPercentile == barCount)
+        {
+            if(self.hexStr_ != nil)
+            {
+                iColor = [self colorFromHexString];
+            }
+            else
+            {
+                iColor = [UIColor colorWithRed:(231/255.0) green:(231/255.0) blue:(238/255.0) alpha:1];
+            }
+        }
+        else
+        {
+            iColor = [UIColor colorWithRed:(231/255.0) green:(231/255.0) blue:(238/255.0) alpha:1];
+        }
+        
+        
+        
         /// Set color and draw the bar
-        iColor = [UIColor colorWithRed:(1 - heightRatio) green:(heightRatio) blue:(0) alpha:1.0];
+       // iColor = [UIColor colorWithRed:(1 - heightRatio) green:(heightRatio) blue:(0) alpha:1.0];
         CGContextSetFillColorWithColor(context, iColor.CGColor);
         CGRect barRect = CGRectMake(barCount + x, y, rectWidth, height);
         CGContextFillRect(context, barRect);

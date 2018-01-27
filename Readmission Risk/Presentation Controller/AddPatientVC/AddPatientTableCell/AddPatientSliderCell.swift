@@ -40,6 +40,7 @@ class AddPatientSliderCell: UITableViewCell {
     @IBOutlet weak var post_View:UIView!
     @IBOutlet weak var postPer_Lbl:UILabel?
     @IBOutlet weak var postQuantity_Lbl:UILabel?
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()

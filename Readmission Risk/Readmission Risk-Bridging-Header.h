@@ -12,5 +12,6 @@
 #import "TPKeyboardAvoidingTableView.h"
 #import "TPKeyboardAvoidingScrollView.h"
 #import "DSBarChart.h"
+#import "Reachability.h"
 
 #endif /* Readmission_Risk_Bridging_Header_h */

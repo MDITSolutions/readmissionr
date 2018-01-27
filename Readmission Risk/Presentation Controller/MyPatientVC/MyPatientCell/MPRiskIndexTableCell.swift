@@ -14,17 +14,25 @@ class MPRiskIndexTableCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        barChart.refs = ["M","T","W","Th","F"]
-        barChart.vals = ["10","20","300","140","200"]
-        
-        // Initialization code
+
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func updateRiskIndexBarGraph(_ graphDic:Dictionary<String,Any>) {
+
+        let val = graphDic["Percentile"]
+        let hexString = graphDic["Color"] as! String
+        self.barChart .setNeedsDisplay()
+        
+        self.barChart.hexStr_ = hexString
+        barChart.refs = ["1","2","3","2","1"]
+        barChart.vals = ["1","2","3","2","1"]
+        barChart.selectedPercentile = Int32("\(val ?? 0)")!
     }
 
 }

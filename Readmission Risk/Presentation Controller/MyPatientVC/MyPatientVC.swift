@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KVNProgress
 
 class MyPatientVC: UIViewController {
     
@@ -20,13 +21,28 @@ class MyPatientVC: UIViewController {
     @IBOutlet weak var editBtn:UIButton!
     
     @IBOutlet weak var graphTable:UITableView!
-    var graphArr:Array<String>! = []
+    var graphArr:Array<Dictionary<String,Any>>! = []
+    var categoricalArr:Array<Dictionary<String,Any>>! = []
+    var riskGraphArr:Array<Dictionary<String,Any>>! = []
     var riskFactsArr:Array<String>! = []
     @IBOutlet weak var riskTable:UITableView!
     
+    var patientRecordArr:Array<Dictionary<String,Any>>! = []
     var patientNameArr:Array<String>! = []
+    var profileDic:Dictionary<String,Any>! = [:]
     
+    // Profile Section
+    
+    @IBOutlet weak var name_Lbl:UILabel!
+    @IBOutlet weak var genderAge_Lbl:UILabel!
+    @IBOutlet weak var patientNo_Lbl:UILabel!
+    @IBOutlet weak var procedure_Lbl:UILabel!
+    @IBOutlet weak var doctorName_Lbl:UILabel!
+    @IBOutlet weak var surgeryDate_Lbl:UILabel!
+    
+    //
     var  selectedIndexPath : IndexPath?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,11 +51,9 @@ class MyPatientVC: UIViewController {
         graphView.setBorderColorAndCorner(8.0, cellCustomView: graphView)
         riskView.setBorderColorAndCorner(8.0, cellCustomView: riskView)
         
-        patientNameArr = ["Conger,Yiwen","Mao,Yiwen","Conger,Yiwen","Mao,Yiwen","Conger,Yiwen","Mao,Yiwen","Conger,Yiwen","Mao,Yiwen","Conger,Yiwen","Mao,Yiwen","Conger,Yiwen","Mao,Yiwen"]
+        patientSCV.isHidden = true
         
-        graphArr = ["Age","Weight","Last Creatinine Level","Ejection Fraction","Perfusion Time","Cross Clamp Time","Last A1C Level","Post-Operative Ventilation Time"]
-        
-        riskFactsArr = ["Valve","Diabetes","Complications","Intra-Aortic Blood Pump","Blood Bank Products Used","Intra-Operative Blood Products Used"]
+        hitMyPatientAPI()
 
         // Do any additional setup after loading the view.
     }
@@ -59,6 +73,167 @@ class MyPatientVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK:- Edit Action Performed
+    
+    @IBAction func edit_btnTapped(_ sender:UIButton)
+    {
+        if selectedIndexPath == nil
+        {
+            if !self.patientRecordArr.isEmpty
+            {
+                let selectedDicResult = self.patientRecordArr[0]
+                
+                AppDelegate.getDelegate().patientDicSelected = selectedDicResult
+            }
+        }
+        else
+        {
+            if !self.patientRecordArr.isEmpty
+            {
+                let selectedDicResult = self.patientRecordArr[(selectedIndexPath?.row)!]
+                AppDelegate.getDelegate().patientDicSelected = selectedDicResult
+                
+                let dashoard = self.storyboard?.instantiateViewController(withIdentifier: "DashboardVC") as! DashboardVC
+                
+                AppDelegate.getDelegate().window?.rootViewController = dashoard
+                AppDelegate.getDelegate().window?.makeKeyAndVisible()
+            }
+            
+            
+        }
+        
+    }
+    
+    // MARK:- Update Profile Setion
+    
+    func profileBioSection() {
+        
+        DispatchQueue.main.async {
+            self.name_Lbl.text = self.profileDic["Name"] as? String
+            
+            let ageStr = self.profileDic["Age"]
+            let genderStr = self.profileDic["Gender"] as? String
+            let patientNoStr = self.profileDic["Patient Number"]
+            let surgeryStr = self.profileDic["Surgery Date"] as! String
+            
+            self.genderAge_Lbl.text = genderStr! + ", " + "\(String(describing: ageStr!)) years old"
+            self.patientNo_Lbl.text = "Patient No: #" + "\(String(describing: patientNoStr!))"
+            
+            self.surgeryDate_Lbl.text = "Surgery Date : " + surgeryStr
+            
+            if let riskArr = self.profileDic["Primary Risk Factors"] as? Array<String>
+            {
+                self.riskFactsArr = riskArr
+                
+                self.riskTable.reloadData()
+            }
+            
+            if let graphBarArr = self.profileDic["Percentiles"] as? Array<Dictionary<String,Any>>
+            {
+                self.graphArr = graphBarArr
+                self.graphTable.reloadData()
+            }
+            if let categoricalBarArr = self.profileDic["Categorical"] as? Array<Dictionary<String,Any>>
+            {
+                self.categoricalArr = categoricalBarArr
+                self.graphTable.reloadData()
+            }
+            
+            if let riskBarArr = self.profileDic["Readmission Risk"] as? Array<Dictionary<String,Any>>
+            {
+               // print("risk graph",riskBarArr)
+                DispatchQueue.main.async {
+                    
+                    UIView.performWithoutAnimation {
+                        self.riskTable.reloadRows(at: [IndexPath(row:1,section:0)], with: .none)
+
+                    }
+                    
+                }
+            }
+            
+        }
+        
+    }
+    
+    // MARK:- API Work
+    
+    func hitMyPatientAPI()
+    {
+        let checkInternet = AppDelegate.getDelegate() .networkStatus()
+        
+        if checkInternet == true {
+            
+            KVNProgress.show()
+            
+            let urlRequest = kMyPatient + "?doctor=Lee,Daniel"
+            
+            let caller = ServiceCallerSwift.init()
+            
+            caller.makeGETAPI("MyPatient", urlString: urlRequest, success: { (dict, requestName) in
+                
+                DispatchQueue.main.async {
+                    KVNProgress.dismiss()
+                }
+                print(dict)
+                
+                if dict.count > 0
+                {
+                    let recordArr = dict["patients"] as? Array<Dictionary<String,Any>>
+                    
+                    self.patientRecordArr = recordArr
+                    
+                    if self.patientRecordArr.count > 0
+                    {
+                        self.profileDic = self.patientRecordArr[0]
+                    }
+                    
+                    self.profileBioSection()
+                    
+                    if let patientArr_ = dict["patients"] as? Array<Dictionary<String,Any>>
+                    {
+                        let nameArray = patientArr_.map({ (nameDict) -> String in
+                            
+                            return nameDict["Name"] as! String
+                        })
+                        
+                        print("nameArray",nameArray)
+                        
+                        self.selectedIndexPath = IndexPath(row:0,section:0)
+                        
+                        self.patientNameArr = nameArray
+                        
+                        DispatchQueue.main.async {
+                            self.patientSCV.isHidden = false
+                            self.patientCollection.reloadData()
+                        }
+                        
+                    }
+                }
+                
+                
+            }) { (error, requestName) in
+                
+                //KVNProgress.dismiss()
+                print(error.localizedDescription)
+                
+                DispatchQueue.main.async {
+                    KVNProgress.dismiss()
+                    self.showNormalAlertWithTitle(kAlertTitle, message: "Please try again later")
+                }
+            }
+            
+        }
+        else
+        {
+            DispatchQueue.main.async {
+                self.showNormalAlertWithTitle(kAlertTitle, message: "Check Internet Connectivity")
+            }
+        }
+        
+        
+    }
 
 }
 
@@ -109,7 +284,7 @@ extension MyPatientVC:UICollectionViewDelegate,UICollectionViewDataSource,UIColl
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView.tag == 101
         {
-            return CGSize(width:collectionView.frame.size.width/5-2,height:50)
+            return CGSize(width:140,height:50)
         }
         else
         {
@@ -123,7 +298,15 @@ extension MyPatientVC:UICollectionViewDelegate,UICollectionViewDataSource,UIColl
         if collectionView.tag == 101
         {
             selectedIndexPath = indexPath
+            
+            profileDic = patientRecordArr[indexPath.row]
+            
+            UIView.performWithoutAnimation {
+                self.profileBioSection()
+            }
             patientCollection.reloadData()
+            //riskTable.reloadData()
+           // graphTable.reloadData()
         }
         
     }
@@ -131,11 +314,30 @@ extension MyPatientVC:UICollectionViewDelegate,UICollectionViewDataSource,UIColl
 
 extension MyPatientVC:UITableViewDataSource,UITableViewDelegate
 {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        if tableView == graphTable
+        {
+            return 2
+        }
+        else
+        {
+            return 1
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if tableView == graphTable
         {
-            return graphArr.count
+            if section == 0
+            {
+                return graphArr.count
+            }
+            else
+            {
+                return categoricalArr.count
+            }
+            
         }
         else
         {
@@ -148,11 +350,30 @@ extension MyPatientVC:UITableViewDataSource,UITableViewDelegate
         
         if tableView == graphTable
         {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "MyPatientGraphTableCell", for: indexPath) as! MyPatientGraphTableCell
-           
-            cell.headingTitle?.text = graphArr[indexPath.row]
+            if indexPath.section == 0
+            {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "MyPatientGraphTableCell", for: indexPath) as! MyPatientGraphTableCell
+                
+                let resultDic = graphArr[indexPath.row]
+                
+                cell.headingTitle?.text = resultDic["Name"] as? String
+                cell.quantity_Lbl?.text = resultDic["Text"] as? String
+                cell.updateBarGraphForIndexPath(resultDic, indexpath_: indexPath)
+                return cell
+            }
+            else
+            {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "MyPatientGraphTableCell", for: indexPath) as! MyPatientGraphTableCell
+                
+                let resultDic = categoricalArr[indexPath.row]
+                
+                cell.headingTitle?.text = resultDic["Name"] as? String
+                cell.quantity_Lbl?.text = resultDic["Text"] as? String
+                cell.updateBarGraphForArrayIndexPath(resultDic, indexpath_: indexPath)
+                return cell
+            }
             
-            return cell
+            
         }
         else
         {
@@ -162,12 +383,25 @@ extension MyPatientVC:UITableViewDataSource,UITableViewDelegate
                 
                 cell.headingTitle?.text = "This Patient's Readmission Risk is"
                 
+                cell.updatePatientRisk(profileDic)
+                
                 return cell
             }
             else if indexPath.row == 1
             {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "MPRiskIndexTableCell", for: indexPath) as! MPRiskIndexTableCell
                 
+               if let resultArr = profileDic["Readmission Risk"] as? Array<Dictionary<String,Any>>
+               {
+                    if resultArr.count > 0
+                    {
+                        let resultDic = resultArr[0]
+                        
+                        cell.updateRiskIndexBarGraph(resultDic)
+                    }
+                
+                }
+
                 cell.headingTitle?.text = "Readmission Risk Index"
                 
                 return cell
@@ -176,7 +410,7 @@ extension MyPatientVC:UITableViewDataSource,UITableViewDelegate
             {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "MPRiskFactsTableCell", for: indexPath) as! MPRiskFactsTableCell
                 
-                cell.headingTitle?.text = "Primary Risk Facts"
+                cell.headingTitle?.text = "Primary Risk Factors"
                 
                 return cell
             }

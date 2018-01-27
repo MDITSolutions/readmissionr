@@ -13,7 +13,7 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var patientDicSelected:Dictionary<String,Any>! = [:]
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -42,6 +42,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         // Saves changes in the application's managed object context before the application terminates.
         self.saveContext()
+    }
+    
+    // MARK:- AppDelegate Singleton
+    
+    class func getDelegate() -> AppDelegate
+    {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+    
+    // MARK:- Check Internet Reachability
+    
+    func networkStatus() -> Bool {
+        
+        let googleReach:Reachability = Reachability.init(hostName: "www.google.com")
+        let status:NetworkStatus = googleReach.currentReachabilityStatus()
+        
+        if status != .NotReachable
+        {
+            return true
+        }
+        else
+        {
+            return false
+        }
+        
     }
 
     // MARK: - Core Data stack

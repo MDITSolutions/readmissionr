@@ -10,7 +10,6 @@ target 'Readmission Risk' do
   pod 'KVNProgress'
   pod 'JJMaterialTextField'
   pod 'KSToastView', '0.5.7'
-  pod 'Alamofire'
 
   target 'Readmission RiskTests' do
     inherit! :search_paths

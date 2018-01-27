@@ -4,105 +4,43 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Alamofire.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
 		<key>JJMaterialTextField-JJMaterialTextField.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>JJMaterialTextField.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>KSToastView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>KVNProgress.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>Pods-Readmission Risk.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 		<key>Pods-Readmission RiskTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>6</integer>
 		</dict>
 		<key>Pods-Readmission RiskUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>7</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>171892E643977CACF1C966931DF0970F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1C784B00E2DE7FD229DCD4F9EF92BC72</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1CC71F9CD5545E32178492A81594B457</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1E9A313EA0B21723861DA543691CFB19</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>597F141C7BCAD3D4FD772CBDC842348B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C366E9E23E09640A4037C2DB020E88A2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E0BA3245DE87C9A67F1784A895AA5759</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

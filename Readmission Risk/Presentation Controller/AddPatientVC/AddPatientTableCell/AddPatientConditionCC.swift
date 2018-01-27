@@ -10,7 +10,7 @@ import UIKit
 
 class AddPatientConditionCC: UICollectionViewCell {
     
-    @IBOutlet weak var conditionTitleIcon:UIImageView!
+    @IBOutlet weak var conditionCheckBox:UIButton!
     @IBOutlet weak var conditionTitle:UILabel!
     
 }

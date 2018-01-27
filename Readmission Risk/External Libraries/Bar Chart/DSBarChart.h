@@ -18,4 +18,6 @@
 @property (atomic, strong) UIColor *color;
 @property (atomic) NSArray* vals;
 @property (atomic) NSArray* refs;
+@property (nonatomic) int selectedPercentile;
+@property (nonatomic, strong) NSString *hexStr_;
 @end

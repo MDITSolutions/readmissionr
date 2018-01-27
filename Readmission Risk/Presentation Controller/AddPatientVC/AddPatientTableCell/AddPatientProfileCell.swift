@@ -11,6 +11,7 @@ import UIKit
 class AddPatientProfileCell: UITableViewCell {
     
     @IBOutlet weak var name_TF:RRMaterialTextfield?
+    @IBOutlet weak var age_TF:RRMaterialTextfield?
     @IBOutlet weak var dob_TF:RRMaterialTextfield?
     @IBOutlet weak var gender_TF:RRMaterialTextfield?
     @IBOutlet weak var height_TF:RRMaterialTextfield?
@@ -26,15 +27,16 @@ class AddPatientProfileCell: UITableViewCell {
         
         customSubView.roundedCellCustomView(8.0, cellCustomView: self.customSubView);
         
-        name_TF?.setPlaceholderOnMaterialTextField("Name")
+        name_TF?.setPlaceholderOnMaterialTextField("Last Name, First Name")
+        age_TF?.setPlaceholderOnMaterialTextField("Age")
         dob_TF?.setPlaceholderOnMaterialTextField("Date of Birth")
         gender_TF?.setPlaceholderOnMaterialTextField("Gender")
         height_TF?.setPlaceholderOnMaterialTextField("Height")
         weight_TF?.setPlaceholderOnMaterialTextField("Weight")
         arrivalDate_TF?.setPlaceholderOnMaterialTextField("Arrival Date")
         surgeryDate_TF?.setPlaceholderOnMaterialTextField("Surgery Date")
-        skinCutStartTime_TF?.setPlaceholderOnMaterialTextField("Skin Cut Start Date")
-        skinCutStopTime_TF?.setPlaceholderOnMaterialTextField("Skin Cut Stop Date")
+        skinCutStartTime_TF?.setPlaceholderOnMaterialTextField("Skin Cut Start Time")
+        skinCutStopTime_TF?.setPlaceholderOnMaterialTextField("Skin Cut Stop Time")
         
         // Initialization code
     }

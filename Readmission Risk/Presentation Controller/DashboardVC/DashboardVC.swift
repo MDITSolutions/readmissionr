@@ -18,6 +18,8 @@ class DashboardVC: UIViewController {
     @IBOutlet weak var dashboardTime_Lbl:UILabel!
     
     var conditionsArr:Array<String>! = []
+    
+    var checkTabStatus:Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,33 +85,43 @@ class DashboardVC: UIViewController {
     
     @IBAction func addPatient_btnTapped(_ sender:UIButton)
     {
-        addPatient_btn.backgroundColor = UIColor.init(red: 231/255, green: 232/255, blue: 238/255, alpha: 1)
+        if checkTabStatus
+        {
+            checkTabStatus = false
+            addPatient_btn.backgroundColor = UIColor.init(red: 231/255, green: 232/255, blue: 238/255, alpha: 1)
+            
+            addPatient_btn.setImage(#imageLiteral(resourceName: "icon-add-patient-active"), for: .normal)
+            myPatient_btn.setImage(#imageLiteral(resourceName: "icon-patients-regular"), for: .normal)
+            
+            
+            myPatient_btn.backgroundColor = UIColor.clear
+            myPatient_Lbl.textColor = UIColor.white
+            addPatient_Lbl.textColor = UIColor.darkGray
+            
+            removeChildViewFromParent()
+            self.addChildViewControllerOnContentView(false)
+        }
         
-        addPatient_btn.setImage(#imageLiteral(resourceName: "icon-add-patient-active"), for: .normal)
-        myPatient_btn.setImage(#imageLiteral(resourceName: "icon-patients-regular"), for: .normal)
-        
-        
-        myPatient_btn.backgroundColor = UIColor.clear
-        myPatient_Lbl.textColor = UIColor.white
-        addPatient_Lbl.textColor = UIColor.darkGray
-        
-        removeChildViewFromParent()
-        self.addChildViewControllerOnContentView(false)
     }
     
     @IBAction func myPatient_btnTapped(_ sender:UIButton)
     {
-        myPatient_btn.backgroundColor = UIColor.init(red: 231/255, green: 232/255, blue: 238/255, alpha: 1)
+        if !checkTabStatus
+        {
+            checkTabStatus = true
+            myPatient_btn.backgroundColor = UIColor.init(red: 231/255, green: 232/255, blue: 238/255, alpha: 1)
+            
+            myPatient_btn.setImage(#imageLiteral(resourceName: "icon-patients-active"), for: .normal)
+            addPatient_btn.setImage(#imageLiteral(resourceName: "icon-add-patient-regular"), for: .normal)
+            
+            addPatient_btn.backgroundColor = UIColor.clear
+            myPatient_Lbl.textColor = UIColor.darkGray
+            addPatient_Lbl.textColor = UIColor.white
+            
+            removeChildViewFromParent()
+            self.addChildViewControllerOnContentView(true)
+        }
         
-        myPatient_btn.setImage(#imageLiteral(resourceName: "icon-patients-active"), for: .normal)
-        addPatient_btn.setImage(#imageLiteral(resourceName: "icon-add-patient-regular"), for: .normal)
-        
-        addPatient_btn.backgroundColor = UIColor.clear
-        myPatient_Lbl.textColor = UIColor.darkGray
-        addPatient_Lbl.textColor = UIColor.white
-        
-        removeChildViewFromParent()
-        self.addChildViewControllerOnContentView(true)
     }
 
     // MARK:- Add Child View Controller

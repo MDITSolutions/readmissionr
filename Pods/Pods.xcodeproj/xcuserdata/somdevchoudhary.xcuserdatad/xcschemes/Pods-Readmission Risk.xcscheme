@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1E9A313EA0B21723861DA543691CFB19"
+               BlueprintIdentifier = "A84EDF6F9274B430E52DB72D5E751A32"
                BuildableName = "Pods_Readmission_Risk.framework"
                BlueprintName = "Pods-Readmission Risk"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1E9A313EA0B21723861DA543691CFB19"
+            BlueprintIdentifier = "A84EDF6F9274B430E52DB72D5E751A32"
             BuildableName = "Pods_Readmission_Risk.framework"
             BlueprintName = "Pods-Readmission Risk"
             ReferencedContainer = "container:Pods.xcodeproj">

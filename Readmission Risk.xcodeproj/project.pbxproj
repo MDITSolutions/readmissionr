@@ -10,12 +10,18 @@
 		3315FC3F6DA76F96F1635A17 /* Pods_Readmission_RiskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADEDDEE80DC7E535EFD9840A /* Pods_Readmission_RiskUITests.framework */; };
 		7D1A3DF9A201F7D0D8DAA186 /* Pods_Readmission_RiskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3B091B8C9DEBC4424B63CF /* Pods_Readmission_RiskTests.framework */; };
 		970236981FEED5D10008C157 /* DatePickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970236971FEED5D10008C157 /* DatePickerDialog.swift */; };
+		97028A4B200A90B500A3BD66 /* AddPatientValidationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97028A4A200A90B500A3BD66 /* AddPatientValidationExtension.swift */; };
+		97028A4E200AA28000A3BD66 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 97028A4D200AA28000A3BD66 /* Reachability.m */; };
 		97053D351FE056C900D880DD /* AddPatientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97053D341FE056C900D880DD /* AddPatientVC.swift */; };
 		97053D371FE056D700D880DD /* MyPatientVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97053D361FE056D700D880DD /* MyPatientVC.swift */; };
 		97053D3D1FE05CC800D880DD /* AddPatientSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97053D391FE05CC800D880DD /* AddPatientSliderCell.swift */; };
 		97053D3E1FE05CC800D880DD /* AddPatientConditionCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97053D3A1FE05CC800D880DD /* AddPatientConditionCC.swift */; };
 		97053D3F1FE05CC800D880DD /* AddPatientProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97053D3B1FE05CC800D880DD /* AddPatientProfileCell.swift */; };
 		97053D401FE05CC800D880DD /* AddPatientConditionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97053D3C1FE05CC800D880DD /* AddPatientConditionCell.swift */; };
+		97140DE4200948CA003325E4 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97140DE3200948CA003325E4 /* Constant.swift */; };
+		97140DE720097023003325E4 /* ServiceCallerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97140DE620097022003325E4 /* ServiceCallerSwift.swift */; };
+		9715E9E92008C10D00DEC7D9 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9715E9E82008C10D00DEC7D9 /* AlertExtension.swift */; };
+		9715E9EB2008DE2300DEC7D9 /* AddPatientChooseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9715E9EA2008DE2300DEC7D9 /* AddPatientChooseCell.swift */; };
 		972148391FE447A600D8A51A /* MyPatientNameCC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 972148381FE447A600D8A51A /* MyPatientNameCC.swift */; };
 		973757C820089CB90081F052 /* .gitignore.txt in Resources */ = {isa = PBXBuildFile; fileRef = 973757C720089CB90081F052 /* .gitignore.txt */; };
 		97538FEE1FD86995002AEF78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97538FED1FD86995002AEF78 /* AppDelegate.swift */; };
@@ -66,12 +72,19 @@
 		4D5E06C3B2646DB43979088B /* Pods-Readmission RiskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Readmission RiskTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Readmission RiskTests/Pods-Readmission RiskTests.release.xcconfig"; sourceTree = "<group>"; };
 		6E3B091B8C9DEBC4424B63CF /* Pods_Readmission_RiskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Readmission_RiskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		970236971FEED5D10008C157 /* DatePickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerDialog.swift; sourceTree = "<group>"; };
+		97028A4A200A90B500A3BD66 /* AddPatientValidationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPatientValidationExtension.swift; sourceTree = "<group>"; };
+		97028A4C200AA28000A3BD66 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		97028A4D200AA28000A3BD66 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		97053D341FE056C900D880DD /* AddPatientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPatientVC.swift; sourceTree = "<group>"; };
 		97053D361FE056D700D880DD /* MyPatientVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPatientVC.swift; sourceTree = "<group>"; };
 		97053D391FE05CC800D880DD /* AddPatientSliderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPatientSliderCell.swift; sourceTree = "<group>"; };
 		97053D3A1FE05CC800D880DD /* AddPatientConditionCC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPatientConditionCC.swift; sourceTree = "<group>"; };
 		97053D3B1FE05CC800D880DD /* AddPatientProfileCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPatientProfileCell.swift; sourceTree = "<group>"; };
 		97053D3C1FE05CC800D880DD /* AddPatientConditionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPatientConditionCell.swift; sourceTree = "<group>"; };
+		97140DE3200948CA003325E4 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		97140DE620097022003325E4 /* ServiceCallerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceCallerSwift.swift; sourceTree = "<group>"; };
+		9715E9E82008C10D00DEC7D9 /* AlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
+		9715E9EA2008DE2300DEC7D9 /* AddPatientChooseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPatientChooseCell.swift; sourceTree = "<group>"; };
 		972148381FE447A600D8A51A /* MyPatientNameCC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPatientNameCC.swift; sourceTree = "<group>"; };
 		973757C720089CB90081F052 /* .gitignore.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore.txt; sourceTree = "<group>"; };
 		97538FEA1FD86995002AEF78 /* Readmission Risk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Readmission Risk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,8 +210,27 @@
 				97053D3A1FE05CC800D880DD /* AddPatientConditionCC.swift */,
 				97053D3B1FE05CC800D880DD /* AddPatientProfileCell.swift */,
 				97053D3C1FE05CC800D880DD /* AddPatientConditionCell.swift */,
+				9715E9EA2008DE2300DEC7D9 /* AddPatientChooseCell.swift */,
 			);
 			path = AddPatientTableCell;
+			sourceTree = "<group>";
+		};
+		97140DE2200948B2003325E4 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				97140DE3200948CA003325E4 /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		97140DE520097009003325E4 /* Service Caller */ = {
+			isa = PBXGroup;
+			children = (
+				97140DE620097022003325E4 /* ServiceCallerSwift.swift */,
+				97028A4C200AA28000A3BD66 /* Reachability.h */,
+				97028A4D200AA28000A3BD66 /* Reachability.m */,
+			);
+			path = "Service Caller";
 			sourceTree = "<group>";
 		};
 		972148371FE4478700D8A51A /* MyPatientCell */ = {
@@ -242,9 +274,11 @@
 			children = (
 				97538FF11FD86995002AEF78 /* Main.storyboard */,
 				97538FED1FD86995002AEF78 /* AppDelegate.swift */,
-				97EF7D741FDC5E92006149FE /* Extension */,
 				97CE90201FD9CE850078F493 /* Presentation Controller */,
 				97B497501FDB0F9A007A4CFA /* Modals */,
+				97140DE520097009003325E4 /* Service Caller */,
+				97140DE2200948B2003325E4 /* Constant */,
+				97EF7D741FDC5E92006149FE /* Extension */,
 				97B497411FDB0D1B007A4CFA /* External Libraries */,
 				97B4974F1FDB0D7F007A4CFA /* Readmission Risk-Bridging-Header.h */,
 				97538FF71FD86995002AEF78 /* Assets.xcassets */,
@@ -338,6 +372,8 @@
 			isa = PBXGroup;
 			children = (
 				97EF7D751FDC5EA3006149FE /* Extension.swift */,
+				9715E9E82008C10D00DEC7D9 /* AlertExtension.swift */,
+				97028A4A200A90B500A3BD66 /* AddPatientValidationExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -570,14 +606,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Readmission Risk/Pods-Readmission Risk-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/JJMaterialTextField/JJMaterialTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/KSToastView/KSToastView.framework",
 				"${BUILT_PRODUCTS_DIR}/KVNProgress/KVNProgress.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JJMaterialTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KSToastView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVNProgress.framework",
@@ -645,15 +679,19 @@
 				97053D371FE056D700D880DD /* MyPatientVC.swift in Sources */,
 				97B497521FDB0FC6007A4CFA /* RRMaterialTextfield.swift in Sources */,
 				97CE90231FD9CE850078F493 /* DashboardVC.swift in Sources */,
+				97028A4B200A90B500A3BD66 /* AddPatientValidationExtension.swift in Sources */,
 				97E48A2E1FE57C0500C56127 /* MyPatientGraphTableCell.swift in Sources */,
 				97053D3F1FE05CC800D880DD /* AddPatientProfileCell.swift in Sources */,
 				970236981FEED5D10008C157 /* DatePickerDialog.swift in Sources */,
 				972148391FE447A600D8A51A /* MyPatientNameCC.swift in Sources */,
 				97EF7D731FDC5576006149FE /* RRLevelSlider.swift in Sources */,
+				97140DE4200948CA003325E4 /* Constant.swift in Sources */,
 				97EF7D761FDC5EA3006149FE /* Extension.swift in Sources */,
 				97B4974C1FDB0D1B007A4CFA /* TPKeyboardAvoidingTableView.m in Sources */,
+				9715E9E92008C10D00DEC7D9 /* AlertExtension.swift in Sources */,
 				977458EC1FE642870079BBBB /* DSBarChart.m in Sources */,
 				97B4974B1FDB0D1B007A4CFA /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				97140DE720097023003325E4 /* ServiceCallerSwift.swift in Sources */,
 				97E48A301FE57C2000C56127 /* MyPatientRiskTableCell.swift in Sources */,
 				97FFA2BA1FE679BF00BDB172 /* MPRiskFactsCC.swift in Sources */,
 				97B4974D1FDB0D1B007A4CFA /* TPKeyboardAvoidingScrollView.m in Sources */,
@@ -662,7 +700,9 @@
 				97053D3D1FE05CC800D880DD /* AddPatientSliderCell.swift in Sources */,
 				97053D3E1FE05CC800D880DD /* AddPatientConditionCC.swift in Sources */,
 				97053D351FE056C900D880DD /* AddPatientVC.swift in Sources */,
+				97028A4E200AA28000A3BD66 /* Reachability.m in Sources */,
 				97538FF61FD86995002AEF78 /* Readmission_Risk.xcdatamodeld in Sources */,
+				9715E9EB2008DE2300DEC7D9 /* AddPatientChooseCell.swift in Sources */,
 				97053D401FE05CC800D880DD /* AddPatientConditionCell.swift in Sources */,
 				97FFA2B81FE6700000BDB172 /* MPRiskFactsTableCell.swift in Sources */,
 				97B4974E1FDB0D1B007A4CFA /* TPKeyboardAvoidingCollectionView.m in Sources */,
@@ -840,8 +880,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.readmissionrisk.readmissionrisk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f3996982-8837-4966-9df3-6146e68bd07a";
-				PROVISIONING_PROFILE_SPECIFIER = ReadmissionDevPro_7Dec;
+				PROVISIONING_PROFILE = "c82e8579-adfc-4735-8952-211c3b358ab4";
+				PROVISIONING_PROFILE_SPECIFIER = ReadmissionDevPro_19Dec;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Readmission Risk/Readmission Risk-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -861,8 +901,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.readmissionrisk.readmissionrisk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "f3996982-8837-4966-9df3-6146e68bd07a";
-				PROVISIONING_PROFILE_SPECIFIER = ReadmissionDevPro_7Dec;
+				PROVISIONING_PROFILE = "c82e8579-adfc-4735-8952-211c3b358ab4";
+				PROVISIONING_PROFILE_SPECIFIER = ReadmissionDevPro_19Dec;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Readmission Risk/Readmission Risk-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
