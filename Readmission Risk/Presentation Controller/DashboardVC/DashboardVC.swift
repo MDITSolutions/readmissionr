@@ -20,7 +20,7 @@ class DashboardVC: UIViewController {
     var conditionsArr:Array<String>! = []
     
     var checkTabStatus:Bool = false
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
    
@@ -41,9 +41,10 @@ class DashboardVC: UIViewController {
         
         dashboardTime_Lbl.text = dateTimeResult + " | " + dateResult
         
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
